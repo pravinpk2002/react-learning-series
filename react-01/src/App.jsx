@@ -11,6 +11,10 @@ function App() {
   let l = [10,20,30,40]
   let num = 5
   let cards = []
+  let header={
+    name : "pravin kale",
+    age: 25
+  }
 
   for (let index = 0; index < num; index++) {
     cards.push(<Card key={index}/>)
@@ -19,7 +23,7 @@ function App() {
   return (
     <>
 
-    <Header/>
+    <Header email="prravin@gmail.com" phone="1234567" headerInfo={header}/>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
